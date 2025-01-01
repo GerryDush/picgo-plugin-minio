@@ -1,12 +1,12 @@
 {
-  "name": "picgo-plugin-minio",
-  "version": "2.5.0",
-  "description": "PicGo uploader for MinIO",
+  "name": "picgo-plugin-minio-custom",
+  "version": "1.0.0",
+  "description": "PicGo uploader for MinIO, support custom output url",
   "main": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/Herbertzz/picgo-plugin-minio",
+  "homepage": "https://github.com/mereithhh/picgo-plugin-minio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch && git push origin master && git push origin --tags",
@@ -17,10 +17,11 @@
     "picgo",
     "picgo-plugin",
     "picgo-plugin-minio",
+    "picgo-plugin-minio-custom",
     "picgo-minio",
     "picgo-gui-plugin"
   ],
-  "author": "herbertzz",
+  "author": "mereithhh",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.0.1",
