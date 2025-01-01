@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-minio-custom",
-  "version": "1.0.0",
+  "version": "2.5.3",
   "description": "PicGo uploader for MinIO, support custom output url",
   "main": "src/index.js",
   "publishConfig": {
