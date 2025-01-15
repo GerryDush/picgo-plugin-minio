@@ -1,4 +1,4 @@
-const Minio = require('minio')
+const Minio = require('minio-support-follow-redirects')
 const mimes = {
   gif: 'image/gif',
   jpg: 'image/jpeg',

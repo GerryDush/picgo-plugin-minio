@@ -1,12 +1,12 @@
 {
-  "name": "picgo-plugin-minio-custom",
-  "version": "2.5.3",
-  "description": "PicGo uploader for MinIO, support custom output url",
+  "name": "picgo-plugin-minio-follow-redirects",
+  "version": "2.5.5",
+  "description": "PicGo uploader for MinIO, support custom output url, support follow redirects",
   "main": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/mereithhh/picgo-plugin-minio",
+  "homepage": "https://github.com/gerrydush/picgo-plugin-minio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch && git push origin master && git push origin --tags",
@@ -21,18 +21,18 @@
     "picgo-minio",
     "picgo-gui-plugin"
   ],
-  "author": "mereithhh",
+  "author": "gerrydush",
   "license": "MIT",
   "devDependencies": {
+    "@varnxy/logger": "^1.1.2",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "@varnxy/logger": "^1.1.2"
+    "eslint-plugin-standard": "^3.1.0"
   },
   "dependencies": {
-    "minio": "^7.1.3"
+    "minio-support-follow-redirects": "^8.0.4"
   }
 }
