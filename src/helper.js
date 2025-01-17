@@ -1,4 +1,5 @@
 const Minio = require('minio-support-follow-redirects')
+const { Readable } = require('stream');
 const mimes = {
   gif: 'image/gif',
   jpg: 'image/jpeg',
@@ -129,10 +130,13 @@ module.exports = {
   },
 
   // 上传文件到 minio
-  async uploadFileToMinio(path, file, metaData) {
+  async uploadFileToMinio(path, buffer, metaData) {
     if (!checkMinioInited()) throw 'Minio Client 未初始化'
-
-    await minioClient.putObject(bucket, path, file, file.length, metaData)
+    // 将 Buffer 转换为 Stream
+    const stream = new Readable();
+    stream.push(buffer);
+    stream.push(null); // 表示流结束
+    await minioClient.putObject(bucket, path, stream, 0, metaData)
   },
 
   // 获取minio中的文件列表

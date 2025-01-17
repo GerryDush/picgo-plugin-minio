@@ -1,5 +1,6 @@
 const config = require('./config')
 const helper = require('./helper')
+const { Readable } = require('stream');
 
 const pluginName = 'minio'
 

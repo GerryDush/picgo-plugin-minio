@@ -33,6 +33,6 @@
     "eslint-plugin-standard": "^3.1.0"
   },
   "dependencies": {
-    "minio-support-follow-redirects": "^8.0.4"
+    "minio-support-follow-redirects": "^8.0.5"
   }
 }

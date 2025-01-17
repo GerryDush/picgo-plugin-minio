@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       minio-support-follow-redirects:
-        specifier: ^8.0.4
-        version: 8.0.4
+        specifier: ^8.0.5
+        version: 8.0.5
     devDependencies:
       '@varnxy/logger':
         specifier: ^1.1.2
@@ -696,8 +696,8 @@ packages:
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
-  minio-support-follow-redirects@8.0.4:
-    resolution: {integrity: sha512-LwFSYv/OHGNTAnD0XLmaJ+3SZ76wvRcZ1JK4aOSWMyZQPDbJKCaaWiJry4aUg8ESY3vtEEJ2jmq6zPktPV4Kfg==}
+  minio-support-follow-redirects@8.0.5:
+    resolution: {integrity: sha512-fS65csC3lDVBs3IDhwtcanVLr01mhNhZ+bRBuAua1n87Rj8F560245Z1/CLt1mQRZca0P7Jbv8N8aU2EmsW4Rg==}
     engines: {node: ^16 || ^18 || >=20}
 
   mkdirp@0.5.6:
@@ -1860,7 +1860,7 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minio-support-follow-redirects@8.0.4:
+  minio-support-follow-redirects@8.0.5:
     dependencies:
       async: 3.2.6
       block-stream2: 2.1.0
